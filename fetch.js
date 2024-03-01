@@ -1,7 +1,7 @@
-const APIKEY = "8a93b3615f876af850d759c7ff217f98";
 const listURL = "https://api.themoviedb.org/3/tv/changes"
 
 async function fetchMovies() {
+  // Mettre sa clé api pour fetch sur l'api TMDB
   const response = await fetch(`https://api.themoviedb.org/3/movie/1895?api_key=${APIKEY}`)
   const data = await response.json()
 
